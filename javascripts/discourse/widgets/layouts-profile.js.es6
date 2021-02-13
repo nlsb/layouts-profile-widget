@@ -45,9 +45,9 @@ export default layouts.createLayoutsWidget('profile', {
     const path = this.currentUser.path;
     
     let links = [{
-      icon: "stream",
-      href: `${path}/activity`,
-      label: "user.activity_stream"
+      icon: "user-plus",
+      href: `${path}/activity/assigned`,
+      label: "discourse_assign.assigned"
     }];
     
     if (this.siteSettings.enable_personal_messages) {
